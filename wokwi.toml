@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+firmware = ".pio/build/esp32-s3-devkitc-1/firmware.bin"
+elf = ".pio/build/esp32-s3-devkitc-1/firmware.elf"
+
+# 把仿真里的 ESP32 串口转发到本机 TCP 4000 端口，
+# 这样 PC 端的 Python（pc_vision/moss_vision.py）就能用
+# rfc2217://localhost:4000 连进来发送 MODE / TEXT 命令。
+rfc2217ServerPort = 4000

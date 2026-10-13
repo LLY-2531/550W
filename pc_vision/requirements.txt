@@ -1,0 +1,5 @@
+# 注意：OpenCV 5.x 已经不再自带人脸识别所需的 haarcascade 模型文件，
+#       所以这里锁在 4.x（4.14 自带 17 个 .xml 模型）。
+opencv-python>=4.9,<5
+numpy>=1.26
+pyserial>=3.5

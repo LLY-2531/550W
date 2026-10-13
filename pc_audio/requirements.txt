@@ -1,0 +1,12 @@
+# MOSS 听觉大脑（pc_audio）依赖
+#
+# 说明：
+#   sounddevice 是 PortAudio 的 Python 封装，pip 包里已经带了 Windows 的
+#   PortAudio DLL，不用另外装驱动。
+#
+#   同一台电脑的「视觉大脑」（pc_vision）用的是另一个虚拟环境，
+#   因为它需要 OpenCV，而这边不需要 —— 两边各管各的，互不干扰。
+
+sounddevice>=0.5
+numpy>=1.26
+pyserial>=3.5
