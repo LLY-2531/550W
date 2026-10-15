@@ -84,6 +84,7 @@
 ├── src/  include/            ← ESP32 固件（躯体）
 ├── platformio.ini            ← 固件构建配置
 ├── INSTALL.md                ← ★ 软件端安装文档（从这里开始）
+├── HARDWARE.md               ← 硬件烧录与上机指南（烧录/接线/购物/改固件）
 └── ...
 ```
 
@@ -153,6 +154,7 @@ python moss_brain.py --llm api --api-base "https://api.deepseek.com/v1" --model 
 | 文档 | 内容 |
 |---|---|
 | [INSTALL.md](INSTALL.md) | ★ 软件端安装文档（从零装到跑起来） |
+| [HARDWARE.md](HARDWARE.md) | 硬件烧录与上机指南（烧录方法、接线图、购物清单、改固件） |
 | [pc_brain/DEMO.md](pc_brain/DEMO.md) | 演示与操作手册（要说什么、怎么验证） |
 | [pc_brain/README.md](pc_brain/README.md) | 设计文档（每一层为什么这么写） |
 

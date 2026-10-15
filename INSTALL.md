@@ -22,6 +22,7 @@
 7. 首次启动与验证
 8. 常用操作速查
 9. 常见问题排错
+10. 下一步：上真机（见 HARDWARE.md）
 
 ---
 
@@ -331,6 +332,20 @@ python moss_brain.py --demo --audio-source tools/assets/ask_time.wav --asr whisp
 | `HTTP Error 402 Insufficient Balance`          | 大模型余额不足                 | 去平台充值                                                           |
 | `HTTP Error 429 Too Many Requests`             | 限流                      | 等 30 秒重试，或换一家                                                   |
 | 喊名字没反应                                         | whisper 转写成了别的字         | 换用默认 `boss`（已配同音别名），或加 `--wake-word` 列全写法                       |
+
+---
+
+## 十、下一步：上真机（把 MOSS 接到实体硬件上）
+
+上面跑通的是**纯软件**（摄像头 + 麦克风 + 大模型）。如果你要把它接到 ESP32 实体（OLED 眼睛、灯环、步进电机、蜂鸣器），需要：
+
+1. **买硬件**（ESP32-S3 + 屏幕 + 灯环 + 电机等，约 ¥65–100）；
+2. **烧录固件**（`src/` + `include/` 编译出的 bin 文件）；
+3. **接线 + 联调**。
+
+这一整套的**烧录方法、接线图、购物清单、修改固件的方法**，都写在 [**HARDWARE.md**](HARDWARE.md) 里，照做即可。
+
+> 一句话总结分层：**PC 端大脑（本文）跑在电脑上，不用烧；ESP32 固件（HARDWARE.md）才需要烧录。**
 
 ---
 
